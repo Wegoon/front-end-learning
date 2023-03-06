@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="内联,框架" />
+    <meta name="description" content="html之内联框架学习" />
+    <title>内联框架</title>
+</head>
+
+<body>
+    <header></header>
+
+    <section>
+        <img src="../resources/image/007.png" alt="内联框架" title="内联框架" width="600" height="300">
+        <br />
+        <!-- iframe内嵌框架
+            src：地址
+            width：宽度
+            height：高度
+        -->
+        <iframe src="//player.bilibili.com/player.html?aid=26989820&bvid=BV15s411n737&cid=46486888&page=1"
+            scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="800px"
+            height="400px">
+        </iframe><br />
+
+        <iframe src="https://huaban.com/" frameborder="0" width="800px" height="400px"></iframe><br />
+
+        <iframe src="https://sy.meituan.com/" frameborder="0" width="800px" height="400px"></iframe><br />
+
+        <iframe src="010.内联框架.html" width="800px" height="400px"></iframe><br />
+
+        <iframe src="" name="hello" frameborder="0" width="800px" height="400px"></iframe><br />
+        <a href="https://huaban.com/" target="hello">点击跳转</a>
+    </section>
+
+    <footer></footer>
+
+</body>
+
+</html>
+
+<!-- 大概可以理解为网页有一个更小层级的浏览器页面
+你看taget相当于定位到了内联框架。然后把src的地址传给了内联框架。本质下面那一行穿了个地址内联框架的负责打开。还有name已过时（）
+hello代表了内联框架对象,是把博客连接在这个对象里打开
+然后a标签在这个小页面中打开了一个页面 -->
